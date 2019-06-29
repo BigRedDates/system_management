@@ -1,0 +1,15 @@
+spring:
+    cloud:
+        config:
+           uri: http://localhost:8888
+           profile: dev
+           name: lab-sim-server
+    application:
+        name: lab-sim-server
+
+eureka:
+   client:
+    service-url:
+       defaultZone: http://user:123@localhost:8761/eureka/
+   instance:
+       prefer-ip-address: true
